@@ -1,1 +1,1 @@
-![example animation](./src/example_animation.gif)
+![example animation](./src/example_react_animation.gif)
