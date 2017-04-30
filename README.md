@@ -8,7 +8,7 @@
 ## The Results
 
 1. **react-move**
-  - A simple library that applies d3's interpolate to specified components. Ultimately the features it offered were a bit too simple and I struggled to get the complete sequential animation working.
+  - A lightweight library that applies d3's interpolate to specified components. Ultimately the features it offered were a bit too simple and I struggled to get the complete sequential animation working.
   - [my animation attempt](http://alex.holachek.com/react-animation-comparison/?selectedKind=Animation%20Examples&selectedStory=Using%20react-move&full=0&down=1&left=1&panelRight=0&downPanel=tuchk4%2Freadme%2Fpanel)
   - [the code](https://github.com/aholachek/react-animation-comparison/blob/master/src/react-move-example.js)
 

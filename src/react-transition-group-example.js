@@ -1,12 +1,13 @@
 import React, {PropTypes} from 'react'
 import ReactDOM from 'react-dom'
 import TransitionGroup from 'react-transition-group/TransitionGroup'
-import { TweenLite, Elastic, TimelineLite } from 'gsap'
+import 'gsap/TweenLite'
+import 'gsap/CSSPlugin'
+import 'gsap/EasePack'
+import 'gsap/TimelineLite'
 import Container from './container'
 import animationTimings from './animationTimings'
-
 // nice gsap cheatsheet: https://ihatetomatoes.net/wp-content/uploads/2016/07/GreenSock-Cheatsheet-4.pdf
-
 const animateIn = (gridContainer) => {
   const cards = gridContainer.querySelectorAll('.card')
   new TimelineLite()

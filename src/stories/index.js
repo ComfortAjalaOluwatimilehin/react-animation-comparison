@@ -1,12 +1,5 @@
 import React from 'react'
 import { storiesOf } from '@kadira/storybook'
-import withReadme from 'storybook-readme/with-readme'
-
-import reactMotionRM from './react-motion-readme.md'
-import reactMotionUIRM from './react-motion-ui-pack-readme.md'
-import reactMoveRM from './react-move-readme.md'
-import velocityReactRM from './velocity-react-readme.md'
-import reactTransitionRM from './react-transition-group-readme.md'
 
 import ReactMoveGrid from './../react-move-example'
 import ReactMotionUIPackGrid from './../react-motion-ui-pack-example'
@@ -29,18 +22,18 @@ setOptions({
 })
 
 storiesOf('Animation Examples', module)
-  .add('Using react-move', reactMoveRM, () => (
+  .add('Using react-move', () => (
     <ReactMoveGrid />
   ))
-  .add('Using react-motion-ui-pack', reactMotionUIRM, () => (
+  .add('Using react-motion-ui-pack', () => (
     <ReactMotionUIPackGrid />
   ))
-  .add('Using velocity-react', velocityReactRM, () => (
+  .add('Using velocity-react', () => (
     <VelocityReact />
   ))
-  .add('Using react motion', reactMotionRM, () => (
+  .add('Using react motion', () => (
     <ReactMotion />
   ))
-  .add('Using react transition group + gsap', reactTransitionRM, () => (
+  .add('Using react transition group + gsap', () => (
     <ReactTransitionGroup />
   ))
