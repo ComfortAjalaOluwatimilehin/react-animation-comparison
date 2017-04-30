@@ -29,18 +29,18 @@ setOptions({
 })
 
 storiesOf('Animation Examples', module)
-  .add('Using react-move', withReadme(reactMoveRM, () => (
+  .add('Using react-move', reactMoveRM, () => (
     <ReactMoveGrid />
-  )))
-  .add('Using react-motion-ui-pack', withReadme(reactMotionUIRM, () => (
+  ))
+  .add('Using react-motion-ui-pack', reactMotionUIRM, () => (
     <ReactMotionUIPackGrid />
-  )))
-  .add('Using velocity-react', withReadme(velocityReactRM, () => (
+  ))
+  .add('Using velocity-react', velocityReactRM, () => (
     <VelocityReact />
-  )))
-  .add('Using react motion', withReadme(reactMotionRM, () => (
+  ))
+  .add('Using react motion', reactMotionRM, () => (
     <ReactMotion />
-  )))
-  .add('Using react transition group + gsap', withReadme(reactTransitionRM, () => (
+  ))
+  .add('Using react transition group + gsap', reactTransitionRM, () => (
     <ReactTransitionGroup />
-  )))
+  ))
