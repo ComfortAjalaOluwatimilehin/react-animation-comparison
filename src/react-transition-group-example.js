@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react'
 import ReactDOM from 'react-dom'
 import TransitionGroup from 'react-transition-group/TransitionGroup'
-import {TweenLite, Elastic, TimelineLite } from 'gsap'
+import { TweenLite, Elastic, TimelineLite } from 'gsap'
 import Container from './container'
 import animationTimings from './animationTimings'
 

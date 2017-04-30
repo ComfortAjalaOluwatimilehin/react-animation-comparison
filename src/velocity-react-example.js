@@ -26,7 +26,7 @@ const cardAnimationIn = velocityHelpers.registerEffect({
       }
     ]
   ]
-});
+})
 const cardAnimationOut = velocityHelpers.registerEffect({
   defaultDuration: animationTimings.cardLeave,
   calls: [
@@ -41,20 +41,20 @@ const cardAnimationOut = velocityHelpers.registerEffect({
         translateZ: 0
       },
       1, {
-        display: 'flex',
+        display: 'flex'
       }
     ]
   ]
-});
+})
 
 const AnimatedGridContents = (props) => {
   return (
-    <VelocityTransitionGroup component='ul' className='grid' runOnMount={true}
+    <VelocityTransitionGroup component='ul' className='grid' runOnMount
       enter={{
         animation: cardAnimationIn,
         stagger: animationTimings.cardStagger,
-        drag : true,
-        delay : animationTimings.gridEnter
+        drag: true,
+        delay: animationTimings.gridEnter
 
       }}
       // ========================================================
@@ -64,10 +64,10 @@ const AnimatedGridContents = (props) => {
       leave={{
         animation: cardAnimationOut,
         stagger: animationTimings.cardStagger,
-        drag : true
+        drag: true
       }}
     >{props.items.map((item) => {
-      return <div className="card" key={item}>{item}</div>
+      return <div className='card' key={item}>{item}</div>
     })}
     </VelocityTransitionGroup>
   )
@@ -92,11 +92,11 @@ const gridAnimationIn = velocityHelpers.registerEffect({
       },
       1, {
         display: 'flex',
-        easing : 'spring'
+        easing: 'spring'
       }
     ]
   ]
-});
+})
 
 const gridAnimationOut = velocityHelpers.registerEffect({
   defaultDuration: animationTimings.gridLeave,
@@ -105,37 +105,34 @@ const gridAnimationOut = velocityHelpers.registerEffect({
       {
         opacity: 0,
         translateX: -100
-            },
+      },
       1, {
         display: 'flex',
-        easing : 'spring'
+        easing: 'spring'
       }
     ]
   ]
-});
-
+})
 
 const AnimatedGrid = props => {
-
   return (
-  <VelocityTransitionGroup
-    enter={{ animation: gridAnimationIn }}
-    leave={{ animation : gridAnimationOut, delay : 1000 }}
-    runOnMount>
-    {
-      props.items.length ?
-        <div className="grid-to-animate" key='grid-to-animate'>
-          <AnimatedGridContents items={props.items}/>
-        </div>
-      :
-      <div></div>
-    }
+    <VelocityTransitionGroup
+      enter={{ animation: gridAnimationIn }}
+      leave={{ animation: gridAnimationOut, delay: 1000 }}
+      runOnMount>
+      {
+        props.items.length
+          ? <div className='grid-to-animate' key='grid-to-animate'>
+            <AnimatedGridContents items={props.items} />
+          </div>
+        : <div />
+      }
     </VelocityTransitionGroup >
-    );
-};
+  )
+}
 
 AnimatedGrid.props = {
   items: PropTypes.array.isRequired
 }
 
-export default() => <Container><AnimatedGrid/></Container>
+export default() => <Container><AnimatedGrid /></Container>
