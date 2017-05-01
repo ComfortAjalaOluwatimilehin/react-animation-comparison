@@ -6,6 +6,7 @@ import ReactMotionUIPackGrid from './../react-motion-ui-pack-example'
 import VelocityReact from './../velocity-react-example'
 import ReactMotion from './../react-motion-example'
 import ReactTransitionGroup from './../react-transition-group-example'
+import ReactTransitionGroupAnime from './../react-transition-group-example-anime'
 
 import { setOptions } from '@kadira/storybook-addon-options'
 import './../index.css'
@@ -36,4 +37,7 @@ storiesOf('Animation Examples', module)
   ))
   .add('Using react transition group + gsap', () => (
     <ReactTransitionGroup />
+  ))
+  .add('Using react transition group + animejs', () => (
+    <ReactTransitionGroupAnime />
   ))

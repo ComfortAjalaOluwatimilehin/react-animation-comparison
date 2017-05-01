@@ -100,11 +100,12 @@ const gridAnimationIn = velocityHelpers.registerEffect({
 
 const gridAnimationOut = velocityHelpers.registerEffect({
   defaultDuration: animationTimings.gridLeave,
+  delay: 2000,
   calls: [
     [
       {
         opacity: 0,
-        translateX: -100
+        translateX: 2000
       },
       1, {
         display: 'flex',
