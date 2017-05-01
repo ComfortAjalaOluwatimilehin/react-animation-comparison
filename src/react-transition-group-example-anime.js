@@ -5,9 +5,17 @@ import anime from 'animejs'
 import Container from './container'
 import animationTimings from './animationTimings'
 
+let currentAnimation
+
+const clearCurrentAnimation = () => {
+  // not sure if this does anything/is necessary?
+  if (currentAnimation) currentAnimation.pause()
+}
+
 const animateIn = (gridContainer) => {
+  clearCurrentAnimation()
   const cards = gridContainer.querySelectorAll('.card')
-  anime.timeline()
+  currentAnimation = anime.timeline()
   .add({
     targets: cards,
     opacity: 0,
@@ -15,7 +23,8 @@ const animateIn = (gridContainer) => {
   })
   .add({
     targets: gridContainer,
-    translateX: [-2000, 0],
+    translateX: [-1000, 0],
+    opacity: [0, 1],
     duration: animationTimings.gridEnter
   })
   .add({
@@ -30,12 +39,14 @@ const animateIn = (gridContainer) => {
 }
 
 const animateOut = (gridContainer, callback) => {
+  clearCurrentAnimation()
+
   const cards = gridContainer.querySelectorAll('.card')
-  anime.timeline()
+  currentAnimation = anime.timeline()
   .add({
     targets: cards,
     duration: 700,
-    opacity: 0,
+    opacity: [1, 0],
     translateY: -30,
     delay: function (el, i, l) {
       return i * 100
@@ -43,8 +54,8 @@ const animateOut = (gridContainer, callback) => {
   })
   .add({
     targets: gridContainer,
-    translateX: 2000,
-    opacity: 0,
+    translateX: 1000,
+    opacity: [1, 0],
     duration: 1000,
     complete: callback,
     offset: '-=200'
@@ -75,7 +86,7 @@ const AnimatedGrid = props => {
   return (
     <TransitionGroup>{
       props.items.length
-        ? <AnimatedGridContents items={props.items} key='animated-grid' />
+        ? <AnimatedGridContents items={props.items} key='AnimatedGridContents' />
       : <div />
     }
     </TransitionGroup>

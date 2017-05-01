@@ -18,6 +18,7 @@
 .grid-to-animate {
   background-color: #6279ff;
   display: block;
+  max-width: 600px;
 }
 
 .grid {
