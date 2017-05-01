@@ -27,7 +27,13 @@
  - [my animation attempt](http://alex.holachek.com/react-animation-comparison/?selectedKind=Animation%20Examples&selectedStory=Using%20velocity-react&full=0&down=1&left=1&panelRight=0&downPanel=tuchk4%2Freadme%2Fpanel)
  - [the code](https://github.com/aholachek/react-animation-comparison/blob/master/src/velocity-react-example.js)
 
-5. **react-transition-group & gsap**
- - One of the faster examples to build and the only one that I managed to get to match the example animation exactly.
- - [my animation attempt](http://alex.holachek.com/react-animation-comparison/?selectedKind=Animation%20Examples&selectedStory=Using%20react%20transition%20group%20%2B%20gsap&full=0&down=1&left=1&panelRight=0&downPanel=tuchk4%2Freadme%2Fpanel)
- - [the code](https://github.com/aholachek/react-animation-comparison/blob/master/src/react-transition-group-example.js)
+
+ 5. **react-transition-group & animejs**
+  - Using react-transition-group and a JavaScript animation library ended up being by far my favorite technique
+  - [my animation attempt](http://alex.holachek.com/react-animation-comparison/?selectedKind=Animation%20Examples&selectedStory=Using%20react%20transition%20group%20%2B%20animejs&full=0&down=1&left=1&panelRight=0&downPanel=tuchk4%2Freadme%2Fpanel)
+  - [the code](https://github.com/aholachek/react-animation-comparison/blob/master/src/react-transition-group-example-anime.js)
+
+  6. **react-transition-group & gsap**
+   - Very much like the animejs example. Animejs is more lightweight,  ES2015-friendly, and open source, but GSAP is the standard for powerful JavaScript animation libraries.
+   - [my animation attempt](http://alex.holachek.com/react-animation-comparison/?selectedKind=Animation%20Examples&selectedStory=Using%20react%20transition%20group%20%2B%20gsap&full=0&down=1&left=1&panelRight=0&downPanel=tuchk4%2Freadme%2Fpanel)
+   - [the code](https://github.com/aholachek/react-animation-comparison/blob/master/src/react-transition-group-example.js)
