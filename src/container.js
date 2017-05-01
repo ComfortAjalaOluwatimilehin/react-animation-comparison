@@ -7,7 +7,7 @@ export default class Container extends React.Component {
 
   render() {
     return (<div className='p-4'>
-      <div className='mb-3'>
+      <div className='mb-5'>
         <button className="btn btn-secondary mr-3"
           onClick={()=> this.setState({items : [1,2,3,4,5,6,7,8]})}
           hidden={this.state.items.length ? true : false}

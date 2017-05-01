@@ -47,7 +47,7 @@ const animateOut = (gridContainer, callback) => {
     opacity: 0,
     duration: 1000,
     complete: callback,
-    offset: '-=500'
+    offset: '-=200'
   })
 }
 
