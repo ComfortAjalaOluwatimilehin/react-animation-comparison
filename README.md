@@ -1,13 +1,13 @@
 # Comparing the Ease of Use of 5 React Animation Libraries
 
-## Read [the blog post](https://www.freshtilledsoil.com/whats-the-most-developer-friendly-react-animation-library/) where I give a more in-depth discussion of this project.
+Read [the blog post](https://www.freshtilledsoil.com/whats-the-most-developer-friendly-react-animation-library/) where I give a more in-depth discussion of this project.
 
-## The Goal: to replicate this animation on entering and exiting react components:
+### The Goal: to replicate this animation on entering and exiting react components:
 ![example animation](./src/example_react_animation.gif)
 
-## The Time Limit: Spend no more than an hour and a half learning a library's API and trying to implement the animation.
+### The Arbitrary Time Limit: Spend no more than an hour/hour and a half learning a library's API and trying to implement the animation.
 
-## The Results
+### The Results
 
 1. **react-move**
   - A lightweight library that applies d3's interpolate to specified components. Ultimately the features it offered were a bit too simple and I struggled to get the complete sequential animation working.
