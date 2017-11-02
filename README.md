@@ -1,3 +1,6 @@
+
+ **Update:** I have [a new blog post](https://medium.com/about-codecademy/building-animations-in-react-from-scratch-c66a582c9b65) and [repo](https://github.com/aholachek/react-animations-from-scratch) showing some concrete examples of how to build complex animations in React "from scratch"
+
 # Comparing the Ease of Use of 5 React Animation Libraries
 
 Read [the blog post](https://www.freshtilledsoil.com/whats-the-most-developer-friendly-react-animation-library/) where I give a more in-depth discussion of this project.
